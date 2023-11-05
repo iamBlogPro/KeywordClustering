@@ -1,0 +1,10 @@
+{
+    "file_path": "keywords.csv",
+    "output_excel_file": "clustered_keywords.xlsx",
+    "outliers_excel_file": "outliers.xlsx",
+    "min_cluster_size": 5,
+    "language": "english",
+    "calculate_probabilities": false,
+    "save_model": false,
+    "plot_results": false
+}
