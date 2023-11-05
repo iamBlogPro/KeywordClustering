@@ -12,8 +12,7 @@ from logging.handlers import RotatingFileHandler
 import json
 from tqdm.auto import tqdm
 import datetime
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 # Set up logging
 logger = logging.getLogger(__name__)
@@ -150,17 +149,6 @@ def main():
         save_to_excel(df_clustered, config['output_excel_file'], config['outliers_excel_file'])
 
         logger.info("Topic modeling completed and results saved.")
-
-        # Optionally, plot the results if specified in configuration
-        if config.get('plot_results', False):
-            topic_model.visualize_topics()
-            plt.show()
-
-        # Optionally, save the topic model for future use
-        if config.get('save_model', True):
-            model_version = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-            topic_model.save(f"my_bertopic_model_{model_version}.joblib")
-            logger.info(f"Topic model saved as my_bertopic_model_{model_version}.joblib")
 
     except Exception as e:
         logger.exception("An error occurred during topic modeling.")
