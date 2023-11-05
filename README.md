@@ -3,7 +3,7 @@
 Takes a CSV file of keywords - then harnesses Topic Modeling using BerTopic to group them into relevant clusters. Clusters are then stored in spreadsheets, along with outliers. 
 
 # Script for automated keyword clustering using BERTopic
-BERTopic is a topic modeling technique that leverages transformer models to efficiently cluster text data into topics. This script provides a streamlined way to preprocess a collection of keywords, cluster them into topics, save the results to Excel, and optionally visualize the topic distribution.
+BERTopic is a topic modeling technique that leverages transformer models and c-TF-IDF to efficiently cluster text data into topics. This script provides a streamlined way to preprocess a collection of keywords, cluster them into topics, save the results to Excel, and optionally visualize the topic distribution.
 
 ## Requirements
 
