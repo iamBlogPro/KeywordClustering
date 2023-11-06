@@ -12,6 +12,7 @@ from logging.handlers import RotatingFileHandler
 import json
 from tqdm.auto import tqdm
 import datetime
+import seaborn as sns
 
 
 # Set up logging
