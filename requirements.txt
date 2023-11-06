@@ -1,0 +1,5 @@
+pandas
+bertopic
+openpyxl
+tqdm
+seaborn
